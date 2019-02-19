@@ -1,21 +1,20 @@
 #language: nl
   Functionaliteit: Inloggen
-  Als PO van DAT wil ik kunnen inloggen op de DAT website
+  Als PO van Adactin wil ik kunnen inloggen op de Adactin website
 
 #  Achtergrond: inlogpagina is geladen
-#    Gegeven ik ben op de inlogpagina "testengeautomatiseerd.nl/cursus" ben
 
 
   @Smoketest
   Scenario: Succesvol inloggen
-    Gegeven ik ben op de inlogpagina ben
-    Als ik inlog met user cursus en met ww tester
-    Dan moet ik naar de DAT homepage gaan
+    Gegeven ik ben op de adactin inlogpagina
+    Als ik inlog met user Cucumbertestuser en met ww cucumbertestuser
+    Dan moet ik succesvol ingelogd zijn met user Cucumbertestuser
 
   @Regressie
   Scenario: Fout inloggen
-    Gegeven ik ben op de inlogpagina ben
-    Als ik inlog met user test en met ww tester
+    Gegeven ik ben op de adactin inlogpagina
+    Als ik inlog met user Cucumbertestuser en met ww tester
     Dan krijg ik een melding dat ik niet mag inloggen
 
 #  Scenario: Met onjuist inloggen krijg je foutmelding
