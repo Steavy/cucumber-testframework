@@ -7,8 +7,10 @@ import cucumber.api.java.nl.Dan;
 import cucumber.api.java.nl.Gegeven;
 
 import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selectors.*;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selectors.byId;
+import static com.codeborne.selenide.Selectors.byXpath;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
 public class LoginSteps {
     private PropertyReader propertyReader = new PropertyReader();

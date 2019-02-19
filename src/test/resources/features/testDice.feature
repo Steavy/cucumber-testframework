@@ -1,5 +1,6 @@
 Feature:  test dice outcome
 
+
   Scenario: Test with 3
     Given I have a dice cast at 3
     When I query the oracle
@@ -29,3 +30,9 @@ Feature:  test dice outcome
     Given I have a dice cast at 2
     When I query the oracle
     Then I expect the oracle to return 0
+
+  @IntakeTest
+  Scenario: Test with only multiple given
+    Given I have a dice cast at 3
+    Given I have a dice cast at 6
+    Given I have a dice cast at 9

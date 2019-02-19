@@ -1,4 +1,5 @@
 package com.cucumber.stepdefinitions;
+
 import com.cucumber.helper.PropertyReader;
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.path.json.JsonPath;
@@ -7,6 +8,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
+
 import java.util.ArrayList;
 import java.util.List;
 

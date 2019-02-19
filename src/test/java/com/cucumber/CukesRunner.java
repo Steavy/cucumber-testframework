@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         (
                 features = "src/test/resources",
                 snippets = SnippetType.CAMELCASE,
-                tags = {"~@SmokeTests", "@Regressie"}
+                tags = {"~@SmokeTests", "~@Regressie", "@IntakeTest"}
         )
 
 public class CukesRunner {
